@@ -1,4 +1,5 @@
 <view class='wrapper'>
+<view> 1111</view>
 <image src='http://img4.imgtn.bdimg.com/it/u=2392938084,1908743582&fm=26&gp=0.jpg'></image>
 <text class="dec">祖国的花朵,百花齐放百家争鸣...</text>
 <text class="price">199.999.00$</text>
