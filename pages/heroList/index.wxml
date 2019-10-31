@@ -1,0 +1,6 @@
+<view class="heroList">
+  <view class="'heroItem'" wx:for="{{horeList}}" wx:key='{{item}}' bindtap="toDetail" data-id="{{item.id}}" >
+    <image class="img" src='{{item.iconUrl}}'></image>
+    <text class="horeName" >{{item.name}}</text>
+  </view>
+</view>

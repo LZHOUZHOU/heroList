@@ -1,0 +1,22 @@
+.wrapper{
+  width: 200px;
+  height: 300px;
+  padding: 10px;
+  border: 1px solid #666;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+image{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.dec{
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+.price{
+  color: red;
+  font-weight: 700;
+  width: 100%;
+}

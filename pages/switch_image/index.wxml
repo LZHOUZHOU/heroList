@@ -1,0 +1,9 @@
+<view>
+  <swiper autoplay  duration="200" indicator-dots circular >
+    <block wx:for="{{imageList}}" wx:key="*this">
+      <swiper-item>
+        <image src='{{item}}'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

@@ -1,0 +1,24 @@
+/* pages/heroList/index.wxss */
+page{
+  background-color: #566777;
+  padding-top: 30px;
+}
+
+.heroList{
+  display: flex;
+  flex-wrap: wrap;
+}
+.heroItem{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.33%;
+  margin-bottom: 10px;
+}
+.img{
+  width: 100px;
+  height: 80px;
+}
+.horeName{
+  color: #fff;
+}

@@ -1,0 +1,37 @@
+<!-- <view class="container"> -->
+<swiper indicator-dots autoplay duration='300' indicator-color='#fff' indicator-active-color='#666' interval='2000'>
+  <block wx:for="{{heroDetailData.bgs}}" wx:key="*this">
+    <swiper-item>
+      <image class="img" src="{{item}}"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="main">
+  <view class="left">
+    <view class="title">{{heroDetailData.title}}</view>
+    <view class="name">{{heroDetailData.name}}</view>
+    <text wx:for='{{heroDetailData.tag}}' wx:key="*this" class="skillType">{{item}}</text>
+    <!-- <text class="skillType">打野</text>
+    <text class="skillType">打野</text> -->
+    <view>
+      <text class="skillContent">生存能力</text>
+      <progress class="skill" percent="{{heroDetailData.Ability.life}}" stroke-width='10' backgroundColor='#363636' />
+    </view>
+    <view>
+      <text class="skillContent">物理攻击</text>
+      <progress class="skill" percent="{{heroDetailData.Ability.physical}}" color='#f3c604' stroke-width='10' backgroundColor='#363636' />
+    </view>
+    <view>
+      <text class="skillContent">魔法攻击</text>
+      <progress class="skill" percent="{{heroDetailData.Ability.magic}}" color='#f6a000' stroke-width='10' backgroundColor='#363636' />
+    </view>
+    <view>
+      <text class="skillContent">操作难度</text>
+      <progress class="skill" percent="{{heroDetailData.Ability.difficulty}}" color='#c98bf3' stroke-width='10' backgroundColor='#363636' />
+    </view>
+  </view>
+  <view class="right">
+    {{heroDetailData.story}}
+  </view>
+</view>
+<!-- </view> -->
